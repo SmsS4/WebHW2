@@ -24,7 +24,6 @@
       </p>
     <![endif]-->
     <div class="gallery">
-
       <div class="gallery__row">
         <div class="gallery__col gallery__col--first_col">
             <img src="../files/gallery/0.jpg" id="img0" class="gallery__img"></img>
@@ -70,8 +69,25 @@
          <p class="gallery__description">فضای استراحت</p>
      </div>
       </div>
+    </div>
+
+    <!-- mobile gallery -->
+    <div  class="gallery--mobile">  
+      
+      <img onclick="nextImage()" src="../files/gallery/prev.png" id="prev_image" class="gallery_control"></img>
+      <img onclick="prevImage()"src="../files/gallery/next.png" id="next_image" class="gallery_control"></img>
 
 
+      <label for="gal_clicked" class="gallery_click">
+        <img src="../files/gallery/0.jpg" id="image_mobile" class="gallery__img"></img>        
+  
+      <input type="checkbox" id="gal_clicked" class="gallery_hidden"/>
+
+      <div class="gallery__frame">
+        <div class="gallery__overlay"></div>
+        <p id="gallery_title" class="gallery__title--mobile">کتاب‌خانه</p>
+        <p id="gallery_desc" class="gallery__description--mobile">به کتاب و کتاب‌خوانی اهمیت می‌دهیم</p>
+      </label>
     </div>
 
     <script src="../js/gallery.js"></script>
