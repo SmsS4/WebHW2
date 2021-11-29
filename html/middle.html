@@ -15,17 +15,21 @@
 
   <link rel="stylesheet" type="text/css" href="../css/gallery.css">
   <link rel="stylesheet" type="text/css" href="../css/contac.css">
+  <link rel="stylesheet" type="text/css" href="../css/activities.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 
 </head>
 
-<body dir="rtl">
+<body dir="rtl" style="background-color: white;" onload="rearrangeAll();">
   <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+  
+  
+
   <div class="gallery">
     <div class="gallery__row">
       <div class="gallery__col gallery__col--first_col">
@@ -52,6 +56,7 @@
       </div>
     </div>
 
+
     <div class="gallery__row">
       <div class="gallery__col gallery__col--third_col">
         <img src="../files/gallery/3.jpg" id="img3" class="gallery__img"></img>
@@ -76,6 +81,7 @@
   
 
 
+
   <!-- mobile gallery -->
   <div class="gallery--mobile">
 
@@ -96,6 +102,51 @@
     </label>
   </div>
 
+  <div class="activity" >
+    <div class="activity__row" id = "row-1" >
+      <div class="activity__images" id="1-frame">
+        <img onclick="swap('1-frame')" class="activity__single_images" src="../files/activity/1-1.jpg"></img>
+        <div  class="activity__overlay" >
+          <img onmouseout="swap('1-frame')"  class="activity__single_images activity__single_images--back" src="../files/activity/1-2.jpg"></img>
+        </div>
+      </div>
+      <div class="activity__descrption">
+        <div class="activity__title">
+          لورم‌ایپم
+        </div>
+        <div class="activity__text">
+          لورم‌ایپم متن ساختگی فلان با موضوع بهمان که هدف صنعت چاپ و کاربرد گرافیکی و پرینتر اچ‌پی و از این حرفا و داستانا که خودتون می‌دونید دیگه.
+        </div>
+        <a href="google.com" class="activity__more">
+          اطلاعات بیشتر←
+        </a>
+      </div>
+    </div>
+
+
+    <div class="activity__row" id = "row-2">
+      <div class="activity__descrption">
+        <div class="activity__title">
+          لورم‌ایپم
+        </div>
+        <div class="activity__text">
+          لورم‌ایپم متن ساختگی فلان با موضوع بهمان که هدف صنعت چاپ و کاربرد گرافیکی و پرینتر اچ‌پی و از این حرفا و داستانا که خودتون می‌دونید دیگه.
+        </div>
+        <a href="google.com" class="activity__more">
+          اطلاعات بیشتر←
+        </a>
+      </div>
+      <div class="activity__images" id="2-frame">
+        <img onclick="swap('2-frame')" class="activity__single_images" src="../files/activity/2-1.jpg"></img>
+        <div class="activity__overlay">
+          <img onmouseout="swap('2-frame')" class="activity__single_images activity__single_images--back" src="../files/activity/2-2.jpg"></img>
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+  
     <!-- contact us -->
     <div class="contact_us">
       <div class="contact_us__all_icons">
@@ -109,8 +160,9 @@
         <p class="contact_us__p">باشید</p>
       </div>
     </div>
-
+    
   <script src="../js/gallery.js"></script>
+  <script src="../js/activity.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
