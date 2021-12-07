@@ -4,6 +4,10 @@
 
 /* mobile */
 @media only screen and (max-width: 600px) {
+  .activity.dark-mode {
+    background: rgb(34, 34, 34);
+    color: wheat;
+  }
   .activity__images {
     margin: 10px;
   }
@@ -35,10 +39,9 @@
 
 /* desktop */
 @media only screen and (min-width: 601px) {
-  .activity{
+  .activity {
     /* background: rgb(34, 34, 34); */
     color: black;
-
   }
   .activity.dark-mode {
     background: rgb(34, 34, 34);

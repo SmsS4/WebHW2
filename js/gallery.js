@@ -1,4 +1,4 @@
-var images = [0, 1, 2, 3, 4, 5];
+var all_images = [0, 1, 2, 3, 4, 5];
 var titles = [
   "کتاب‌خانه",
   "فضای استراحت",
@@ -26,9 +26,9 @@ function setImage(to_set) {
 }
 
 function nextImage() {
-  setImage((current_iamge + 1) % images.length);
+  setImage((current_iamge + 1) % all_images.length);
 }
 
 function prevImage() {
-  setImage((current_iamge - 1 + images.length) % images.length);
+  setImage((current_iamge - 1 + all_images.length) % all_images.length);
 }
