@@ -19,6 +19,10 @@
     width: 100%;
     justify-content: center;
   }
+  .contact_us.dark-mode {
+    background-color: rgb(78, 78, 78);
+    color: rgb(34, 34, 34);
+  }
   .contact_us__text {
     margin: auto;
     font-size: 1.6rem;
@@ -42,20 +46,24 @@
 @media only screen and (min-width: 601px) {
   .contact_us {
     display: flex;
-    background-color: black;
+    color: white;
+    background-color: rgb(34, 34, 34);
     padding: 5%;
     justify-content: center;
     clip-path: polygon(50% 17%, 100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
   }
-  .contact_us__all_icons{
-      margin: auto;
+  .contact_us.dark-mode {
+    background-color: rgb(78, 78, 78);
+    color: rgb(34, 34, 34);
+  }
+  .contact_us__all_icons {
+    margin: auto;
   }
   .contact_us__text {
     margin-bottom: auto;
     margin-top: auto;
     margin-right: 30px;
     font-size: 1.6rem;
-    color: white;
   }
 
   .contact_us__icon:hover {
