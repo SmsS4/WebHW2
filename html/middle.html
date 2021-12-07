@@ -20,7 +20,7 @@
 
 </head>
 
-<body dir="rtl" style="background-color: white;" onload="rearrangeAll();">
+<body dir="rtl" class="body" onload="rearrangeAll();" id="body">
   <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -28,9 +28,9 @@
       </p>
     <![endif]-->
   
-  
+    
 
-  <div class="gallery">
+  <div id="gallery_desktop" class="gallery">
     <div class="gallery__row">
       <div class="gallery__col gallery__col--first_col">
         <img src="../files/gallery/0.jpg" id="img0" class="gallery__img"></img>
@@ -83,7 +83,7 @@
 
 
   <!-- mobile gallery -->
-  <div class="gallery--mobile">
+  <div  id="gallery_mobile" class="gallery--mobile">
 
     <img onclick="nextImage()" src="../files/gallery/prev.png" id="prev_image" class="gallery_control"></img>
     <img onclick="prevImage()" src="../files/gallery/next.png" id="next_image" class="gallery_control"></img>
@@ -102,10 +102,10 @@
     </label>
   </div>
 
-  <div class="activity" >
+  <div id="activity" class="activity" >
     <div class="activity__row" id = "row-1" >
       <div class="activity__images" id="1-frame">
-        <img onclick="swap('1-frame')" class="activity__single_images" src="../files/activity/1-1.jpg"></img>
+        <img onclick="swap('1-frame')" class="activity__single_images activity__single_images--front" src="../files/activity/1-1.jpg"></img>
         <div  class="activity__overlay" >
           <img onmouseout="swap('1-frame')"  class="activity__single_images activity__single_images--back" src="../files/activity/1-2.jpg"></img>
         </div>
@@ -137,7 +137,7 @@
         </a>
       </div>
       <div class="activity__images" id="2-frame">
-        <img onclick="swap('2-frame')" class="activity__single_images" src="../files/activity/2-1.jpg"></img>
+        <img onclick="swap('2-frame')" class="activity__single_images--front activity__single_images" src="../files/activity/2-1.jpg"></img>
         <div class="activity__overlay">
           <img onmouseout="swap('2-frame')" class="activity__single_images activity__single_images--back" src="../files/activity/2-2.jpg"></img>
         </div>
@@ -148,7 +148,7 @@
   </div>
   
     <!-- contact us -->
-    <div class="contact_us">
+    <div id="contact" class="contact_us">
       <div class="contact_us__all_icons">
         <img class="contact_us__icon" src="../files/contact/telegram.svg"></img>
         <img class="contact_us__icon" src="../files/contact/github.svg"></img>
