@@ -16,6 +16,9 @@
   <link rel="stylesheet" type="text/css" href="../css/gallery.css">
   <link rel="stylesheet" type="text/css" href="../css/contac.css">
   <link rel="stylesheet" type="text/css" href="../css/activities.css">
+  <link rel="stylesheet" type="text/css" href="../css/news.css">
+  <link rel="stylesheet" type="text/css" href="../css/comments.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 
 </head>
@@ -143,8 +146,6 @@
         </div>
       </div>
     </div>
-
-  
   </div>
   
     <!-- contact us -->
@@ -162,10 +163,121 @@
     </div>
     
   <script src="../js/gallery.js"></script>
+  <script src="../js/comments.js"></script>
   <script src="../js/activity.js"></script>
+  <script src="../js/news.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="comment_text">comments</p>
+    <!--image slider start-->
+    <div class="hor_slider">
+      <div class="slider_cont">
+        <div class="slide">
+          <img src="../files/comments/1.jpg">
+        </div>
+        <div class="slide">
+          <img src="../files/comments/2.jpg">
+        </div>
+        <div class="slide">
+          <img src="../files/comments/3.jpg">
+        </div>
+        <div class="slide">
+          <img src="../files/comments/4.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="../files/comments/1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="../files/comments/2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="../files/comments/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="../files/comments/4.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <!--news start-->
+    <div class="news_holder">
+      <h2 class="header">خبرنامه</h2>
+      <input type="text" class="tinp" name="fname" placeholder="نام">
+      <input type="text" class="tinp" name="lname" placeholder="نام خانوادگی">
+      <input type="text" class="tinp" name="email" placeholder="ایمیل">
+      <button type="submit" class="sbtn" onclick="showAlert()">ارسال</button>
+    </div>
+    
+    <h1 class="alertMsg">Your Info Has Been Succesfully Submitted</h1>
+    <!--news end-->
+
+    <!--footer begin-->
+    <div class="footer_holder">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="footer_text" >goruhe_nabi@gmial.com</p>
+      <br>
+      <br>
+      <p class="footer_text">copyright 2021 alirezahp | design by nig1378 & demol & salimWars</p>
+    </div>
+    <h1 class="alertMsg">Your Info Has Been Succesfully Submitted</h1>
+
+    
+    <!--footer end-->
+
 
 </body>
 
