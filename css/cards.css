@@ -1,0 +1,538 @@
+@media only screen and (max-width: 600px){
+    .cards_holder{
+        width: 100%;
+        height: 1500px;
+    
+    }
+
+    .normal_card{
+        background-color: white;
+        margin-top: 30px;
+        margin-right: 10%;
+        width: 80%;
+        height: 400px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+
+    .leader_card{
+        background-color: white;
+        margin-right: 10%;
+        margin-top: 30px;
+        width: 80%;
+        height: 450px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .info{
+        width: 100%;
+        border-radius: 5px;
+        height: 100px;
+        background-color: rgba(0,144,0,0.75);
+    }
+
+    .info_text{
+        text-align: right;
+        margin-right: 3%;
+        margin-top: 1.5%;
+        font-size: 0.75rem;
+        color: white;
+    }
+
+    .uni_info_text{
+        text-align: right;
+        margin-right: 3%;
+        margin-top: -5px;
+        font-size: 0.55rem;
+        color: white;
+    }
+
+    .info_name{
+        text-align: right;
+        margin-right: 3%;
+        margin-left: 10px;
+        margin-top: -15px;
+        font-size: 1.2rem;
+        color: white;   
+    }
+
+    .leader_info{
+        width: 100%;
+        margin-top: 0;
+        height: 105px;
+        background-color: rgba(0,0,144,0.75);
+        border-radius: 5px;
+    }
+
+    .leader_info_text{
+        text-align: right;
+        margin-right: 5%;
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    .leader_uni_info_text{
+        text-align: right;
+        margin-right: 5%;
+        margin-top: -5px;
+        font-size: 0.90rem;
+        color: white;
+    }
+
+    .leader_info_name{
+        text-align: right;
+        margin-right: 5%;
+        margin-left: 10px;
+        margin-top: -15px;
+        font-size: 1.2rem;
+        color: white;   
+    }
+
+    .abilities0{
+        width: 100%;
+        height: 40%;
+    }
+
+    .abilities1{
+        width: 100%;
+        height: 40%;
+    }
+
+    .ability_holder{
+        
+        width: 100%;
+        height: 25%;
+        display: flex;
+    }
+    .ability_holder1{
+        width: 100%;
+        height: 30%;
+        display: flex;
+    }
+
+
+    .ability_btn00{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability_btn01{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability00{
+        
+    }
+    .ability_btn02{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability01{
+        
+    }
+    .ability_btn03{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability02{
+        
+    }
+    .ability03{
+        
+    }
+
+
+
+    .ability_btn10{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+    .ability_btn11{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability10{
+        
+    }
+    .ability_btn12{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability11{
+        
+    }
+    .ability_btn13{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability12{
+        
+    }
+    .ability13{
+        
+    }
+
+    .link{
+        width: 100%;
+        height: 20%;
+        margin-top: 40px;
+    }
+
+    .btn_link{
+        border-radius: 25px;
+        margin-right: 14%;
+        width: 75%;
+        border-style: solid;
+        border-color: rgba(0,144,0,0.75);
+        height: 50px;
+        margin-top: 20px;
+        
+    }
+}
+
+
+
+@media only screen and (min-width: 601px){
+
+
+
+    .cards_holder{
+        display:inline-block;
+        vertical-align:middle;
+        width: 100%;
+        height: 500px;
+        display: flex;
+    }
+
+    .normal_card{
+        width: 20%;
+        height: 400px;
+        margin-right: 7%;
+        position: relative;
+        display: inline-block;
+        transition: all 0.4s ease;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .normal_card:hover{
+        transform: scale(1.2);
+        margin-right: calc(5% + 10px);
+        margin-left: 5%;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .leader_card{
+        width: 30%;
+        height: 450px;
+        margin-right: 7%;
+        position: relative;
+        display: inline-block;
+        transition: all 0.4s ease;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .leader_card:hover{
+        transform: scale(1.2);
+        margin-right: calc(5% + 10px);
+        margin-left: 5%;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .info{
+        width: 100%;
+        border-radius: 5px;
+        height: 100px;
+        background-color: rgba(0,144,0,0.75);
+    }
+
+    .info_text{
+        text-align: right;
+        margin-right: 3%;
+        margin-top: 1.5%;
+        font-size: 0.75rem;
+        color: white;
+    }
+
+    .uni_info_text{
+        text-align: right;
+        margin-right: 3%;
+        margin-top: -5px;
+        font-size: 0.55rem;
+        color: white;
+    }
+
+    .info_name{
+        text-align: right;
+        margin-right: 3%;
+        margin-left: 10px;
+        margin-top: -15px;
+        font-size: 1.2rem;
+        color: white;   
+    }
+
+    .leader_info{
+        width: 100%;
+        margin-top: 0;
+        height: 105px;
+        background-color: rgba(0,0,144,0.75);
+        border-radius: 5px;
+    }
+
+    .leader_info_text{
+        text-align: right;
+        margin-right: 5%;
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    .leader_uni_info_text{
+        text-align: right;
+        margin-right: 5%;
+        margin-top: -5px;
+        font-size: 0.90rem;
+        color: white;
+    }
+
+    .leader_info_name{
+        text-align: right;
+        margin-right: 5%;
+        margin-left: 10px;
+        margin-top: -15px;
+        font-size: 1.2rem;
+        color: white;   
+    }
+
+    .abilities0{
+        width: 100%;
+        height: 40%;
+    }
+
+    .abilities1{
+        width: 100%;
+        height: 40%;
+    }
+
+    .ability_holder{
+        
+        width: 100%;
+        height: 25%;
+        display: flex;
+    }
+    .ability_holder1{
+        width: 100%;
+        height: 30%;
+        display: flex;
+    }
+
+
+    .ability_btn00{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability_btn00:hover ~ .ability00{
+        font-weight: bold;
+    }
+    .ability_btn01:hover ~ .ability01{
+        font-weight: bold;
+    }
+    .ability_btn02:hover ~ .ability02{
+        font-weight: bold;
+    }
+    .ability_btn03:hover ~ .ability03{
+        font-weight: bold;
+    }
+    .ability_btn01{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability00{
+        
+    }
+    .ability_btn02{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability01{
+        
+    }
+    .ability_btn03{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgba(0,144,0,0.75);
+        margin-right: 5%;
+        margin-top: 7%;
+        margin-left: 7%;
+        border: 1px solid white;
+    }
+
+    .ability02{
+        
+    }
+    .ability03{
+        
+    }
+
+
+
+    .ability_btn10{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability_btn10:hover ~ .ability10{
+        font-weight: bold;
+    }
+    .ability_btn11:hover ~ .ability11{
+        font-weight: bold;
+    }
+    .ability_btn12:hover ~ .ability12{
+        font-weight: bold;
+    }
+    .ability_btn13:hover ~ .ability13{
+        font-weight: bold;
+    }
+    .ability_btn11{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability10{
+        
+    }
+    .ability_btn12{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability11{
+        
+    }
+    .ability_btn13{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,144,0.75);
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-left: 9%;
+        border: 1px solid white;
+    }
+
+    .ability12{
+        
+    }
+    .ability13{
+        
+    }
+
+    .link{
+        width: 100%;
+        height: 20%;
+        margin-top: 40px;
+    }
+
+    .btn_link{
+        border-radius: 25px;
+        margin-right: 14%;
+        width: 75%;
+        border-style: solid;
+        border-color: rgba(0,144,0,0.75);
+        height: 50px;
+        margin-top: 20px;
+        
+    }
+}
