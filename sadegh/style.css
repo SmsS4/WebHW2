@@ -191,9 +191,9 @@ ul li:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  /* #site-header {
-    background-image: url('../files/gradient2.svg');
-  } */
+  #site-header {
+    background-image: url('../files/gradient-mobile.svg');
+  }
 
   #header-content {
     margin-top: 40%;
