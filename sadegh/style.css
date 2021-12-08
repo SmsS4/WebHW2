@@ -7,7 +7,6 @@ html {
 body {
   text-align: right;
   background-color: rgb(150, 150, 150) !important;
-  color: white;
   font-family: Nazanin, sans-serif;
 }
 
@@ -26,12 +25,21 @@ body * {
 }
 
 #site-navbar {
-  z-index: 5;
   padding: 0 20px;
-  background-color: #1d1f1d;
+  background-color: rgba(77, 226, 97, 0.993);
+  color: rgba(11, 26, 3, 0.993);
   height: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+#site-navbar.dark-mode {
+  background-color: rgba(22, 46, 9, 0.993) !important;
+  color: rgba(84, 211, 15, 0.993) !important;
+}
+
+#site-navbar * {
+  z-index: 5;
 }
 
 #logo-container {
@@ -53,8 +61,12 @@ body * {
   align-items: center;
 }
 
-#brand a {
-  color: #09c372;
+#brand a, #site-navbar a {
+  color: rgba(11, 26, 3, 0.993);
+}
+
+#brand.dark-mode a, #site-navbar.dark-mode a {
+  color: rgba(84, 211, 15, 0.993) !important;
 }
 
 ul {
@@ -67,10 +79,6 @@ ul {
 
 nav {
   margin-right: 5%;
-}
-
-ul a {
-  color: white;
 }
 
 ul li {
@@ -92,9 +100,13 @@ ul li:hover {
 #menu-icon div {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
+}
+
+#site-navbar.dark-mode #menu-icon div {
+  background-color: white !important;
 }
 
 .open .bar1 {
@@ -116,6 +128,11 @@ ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  background-color: rgba(77, 226, 97, 0.993);
+}
+
+#site-navbar.dark-mode .open .mobile-menu {
+  background-color: rgba(22, 46, 9, 0.993) !important;
 }
 
 .mobile-menu {
@@ -154,3 +171,10 @@ ul li:hover {
   background-position: top left;
   background-size: 100% 100%;
 }
+
+
+/* @media only screen and (max-width: 600px) {
+  #site-header {
+    background-image: url('../files/gradient2.svg');
+  }
+} */
