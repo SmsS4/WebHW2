@@ -70,6 +70,10 @@ body * {
   color: rgba(84, 211, 15, 0.993) !important;
 }
 
+#site-navbar a {
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
   height: 100%;
@@ -179,13 +183,14 @@ ul li:hover {
 }
 
 #header-content h1 {
-  -webkit-text-stroke: 0.1px white;
+  margin-right: 2.5%;
+  font-size: 35px;
   margin-bottom: 5%;
 }
 
 #header-caption {
   max-width: 60%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   text-align: justify;
 }
@@ -194,7 +199,10 @@ ul li:hover {
   #site-header {
     background-image: url('../files/gradient-mobile.svg');
   }
-
+  #header-content h1 {
+    margin-right: 0;
+    font-size: 32px;
+  }
   #header-content {
     margin-top: 40%;
     margin-right: 20%;
