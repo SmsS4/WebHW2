@@ -22,6 +22,10 @@
     position: relative;
   }
 
+  .gallery--mobile.dark-mode {
+    background-color: rgb(62, 71, 80);
+  }
+
   .gallery_hidden {
     display: none;
     position: absolute;
@@ -91,6 +95,10 @@
     width: 100%;
   }
 
+  .gallery.dark-mode {
+    background-color: rgb(62, 71, 80);
+  }
+
   .gallery__row {
     display: flex;
   }
@@ -144,8 +152,6 @@
     opacity: 1;
   }
 }
-
-
 
 /* .gallery--mobile {
   display: none;
