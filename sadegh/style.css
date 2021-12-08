@@ -172,9 +172,33 @@ ul li:hover {
   background-size: 100% 100%;
 }
 
+#header-content {
+  margin-top: 20%;
+  margin-right: 40%;
+}
 
-/* @media only screen and (max-width: 600px) {
-  #site-header {
+#header-content h1 {
+  -webkit-text-stroke: 0.1px white;
+  margin-bottom: 5%;
+}
+
+#header-caption {
+  max-width: 60%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  /* #site-header {
     background-image: url('../files/gradient2.svg');
+  } */
+
+  #header-content {
+    margin-top: 40%;
+    margin-right: 20%;
   }
-} */
+
+  #header-caption {
+    max-width: 100%;
+  }
+}
