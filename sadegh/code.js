@@ -11,3 +11,7 @@ function change_dark() {
         document.getElementById("buttons-container").classList.add("dark-mode");
     }
 };
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+};

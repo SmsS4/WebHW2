@@ -29,7 +29,6 @@
     <title>شرکت نابی مهندسین وب</title>
 
     <link rel="stylesheet" type="text/css" href="style.css?v=4">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body dir="rtl" style="background-color: white;">
@@ -41,41 +40,44 @@
     <![endif]-->
 
 
-    <nav class="navbar row" id="navbar">
-        <div id="buttons-container">
-            <button onclick="transition_to_section(`folan1`)" type="button" class="btn btn-light navbar-link">
-                بخش ۱
-            </button>
-            <button onclick="transition_to_section(`folan2`)" type="button" class="btn btn-light navbar-link">
-                بخش ۲
-            </button>
-            <button onclick="transition_to_section(`folan3`)" type="button" class="btn btn-light navbar-link">
-                بخش ۳
-            </button>
-            <button onclick="transition_to_section(`folan4`)" type="button" class="btn btn-light navbar-link">
-                بخش ۴
-            </button>
-            <label class="dark-mode">
-                <span>حالت شب</span>
-                <input onclick="change_dark()" id="dark-mode-switch" type="checkbox">
-            </label>
-        </div>
-        <div id="logo-container">
+    <header id="site-navbar" dir="ltr">
+        <div id="logo-container" dir="rtl">
             <a href="#">
                 <img src="../files/multi_favicon/android-chrome-512x512.png" alt="" loading="lazy">
             </a>
+            <div id="brand"><a href="/">شرکت نابی وب</a></div>
+            <input onclick="change_dark()" id="dark-mode-switch" type="checkbox">
         </div>
-    </nav>
+        <nav>
+          <ul dir="rtl">
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۱</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۲</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۳</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۳</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۳</a></li>
+          </ul>
+        </nav>
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu" dir="rtl">
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۱</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۲</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۳</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۳</a></li>
+            <li><a href="#" onclick="transition_to_section(`folan4`)">بخش ۳</a></li>
+          </ul>
+        </div>
+    </header>
 
     <div id="site-header">
+        <!-- <h1>لورم ایپسوم</h1>
+        <div>داستانی دربارهٔ ۴ لاک‌پشت جهش‌یافته انسان‌گونه (به نام‌های مایکل‌آنجلو، لئوناردو، داناتلو و رافائل)</div> -->
     </div>
     
     <!-- here we have scripts -->
     <script type="text/javascript" src="code.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
