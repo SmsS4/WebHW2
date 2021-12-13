@@ -1,0 +1,222 @@
+@import url("https://v1.fontapi.ir/css/Nazanin");
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: right;
+  background-color: rgb(224, 224, 224) !important;
+  font-family: Nazanin, sans-serif;
+}
+
+#body.dark-mode {
+  background-color: rgb(40, 40, 40) !important;
+}
+
+body * {
+  transition: all 0.5s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#site-navbar a {
+  text-decoration: none;
+}
+
+#site-navbar {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  min-height: 10%;
+  padding: 0 20px;
+  background-color: rgba(132, 144, 255, 0.993);
+  color: rgba(11, 26, 3, 0.993);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#site-navbar.dark-mode {
+  background-color: rgba(22, 46, 9, 0.993) !important;
+  color: rgba(84, 211, 15, 0.993) !important;
+}
+
+#site-navbar * {
+  z-index: 5;
+}
+
+#logo-container {
+  left: 20%;
+  margin: 0 0 0 10%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo-container a img {
+  height: 8vh;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a, #site-navbar a {
+  color: rgba(11, 26, 3, 0.993);
+}
+
+#brand.dark-mode a, #site-navbar.dark-mode a {
+  color: rgba(84, 211, 15, 0.993) !important;
+}
+
+#site-navbar a {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav {
+  margin-right: 5%;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#menu-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#menu-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#site-navbar.dark-mode #menu-icon div {
+  background-color: white !important;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(77, 226, 97, 0.993);
+}
+
+#site-navbar.dark-mode .open .mobile-menu {
+  background-color: rgba(22, 46, 9, 0.993) !important;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #site-navbar nav {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+
+#site-header {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 8.5%;
+  background-image: url('../files/gradient.svg');
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+#header-content {
+  margin-top: 20%;
+  margin-right: 40%;
+}
+
+#header-content h1 {
+  margin-right: 2.5%;
+  font-size: 35px;
+  margin-bottom: 5%;
+}
+
+#header-caption {
+  max-width: 60%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  #site-header {
+    background-image: url('../files/gradient-mobile.svg');
+  }
+  #header-content h1 {
+    margin-right: 0;
+    font-size: 32px;
+  }
+  #header-content {
+    margin-top: 40%;
+    margin-right: 20%;
+  }
+
+  #header-caption {
+    max-width: 70%;
+  }
+}

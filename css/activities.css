@@ -44,7 +44,6 @@
     color: black;
   }
   .activity.dark-mode {
-    background: rgb(34, 34, 34);
     color: wheat;
   }
   .activity__title {

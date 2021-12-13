@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
+  <title>شرکت نابی مهندسین وب</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="../css/comments.css">
   <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <link rel="stylesheet" type="text/css" href="../css/cards.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css?v=4">
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 
 </head>
@@ -32,8 +33,52 @@
       </p>
     <![endif]-->
   
-  <div class="cards_holder">
-    <div class="normal_card">
+    <header id="site-navbar" dir="ltr">
+      <div id="logo-container" dir="rtl">
+          <a href="#">
+              <img src="../files/multi_favicon/android-chrome-512x512.png" alt="" loading="lazy">
+          </a>
+          <div id="brand"><a href="/">شرکت نابی وب</a></div>
+          <input onclick="change_dark()" id="dark-mode-switch" type="checkbox" style="display: none;">
+          <label for="dark-mode-switch">
+            <img style="height: 100%;" src="../files/dark.png"></img>
+          </label>
+      </div>
+      <nav>
+        <ul dir="rtl">
+          <li><a href="#site-header">بخش ۱</a></li>
+          <li><a href="#cards_holder">کارت‌ها</a></li>
+          <li><a href="#gallery_desktop">گالری</a></li>
+          <li><a href="#activity">فعالیت‌ها</a></li>
+          <li><a href="#contact">ارتباط</a></li>
+          <li><a href="#slide first">اسلاید‌ها</a></li>
+          <li><a href="#news">خبرنامه</a></li>
+        </ul>
+      </nav>
+      <div id="menu-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu" dir="rtl">
+          <li><a href="#site-header">بخش ۱</a></li>
+          <li><a href="#cards_holder">کارت‌ها</a></li>
+          <li><a href="#gallery_desktop">گالری</a></li>
+          <li><a href="#activity">فعالیت‌ها</a></li>
+          <li><a href="#contact">ارتباط</a></li>
+          <li><a href="#slide first">اسلاید‌ها</a></li>
+          <li><a href="#news">خبرنامه</a></li>
+        </ul>
+      </div>
+  </header>
+  <div id="site-header">
+      <div id="header-content">
+          <h1>لاک‌پشت‌های نینجا</h1>
+          <div id="header-caption">داستانی دربارهٔ ۴ لاک‌پشت جهش‌یافته انسان‌گونه (به نام‌های مایکل‌آنجلو، لئوناردو، داناتلو و رافائل)</div>
+      </div>
+  </div>
+  <div style="height: 100%; min-height: 120vh; position: relative;"></div>
+  <div class="cards_holder" id="cards_holder">
+    <div class="normal_card" id="normal_card2">
       <div class="info">
           <p class="info_text">۹۷۱۱۰۴۳۳</p>
           <p class="info_name">علیرضا حسین پور</p>
@@ -63,7 +108,7 @@
         </form> 
       </div>
     </div>
-    <div class="leader_card">
+    <div class="leader_card" id="leader_card">
       <div class="important">
 
       </div>
@@ -96,7 +141,7 @@
         </form>
       </div>
     </div>
-    <div class="normal_card">
+    <div class="normal_card" id="normal_card1">
       <div class="info">
         <p class="info_text">۹۷۱۰۱۸۲۹</p>
         <p class="info_name">صادق سلیمی</p>
@@ -259,13 +304,6 @@
       </div>
     </div>
     
-  <script src="../js/gallery.js"></script>
-  <script src="../js/comments.js"></script>
-  <script src="../js/activity.js"></script>
-  <script src="../js/news.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
   
   <br>
   <br>
@@ -298,7 +336,7 @@
         <input type="radio" name="radio-btn" id="radio4">
         <!--radio buttons end-->
         <!--slide images start-->
-        <div class="slide first">
+        <div class="slide first" id="slide first">
           <img src="../files/comments/1.jpg" alt="">
         </div>
         <div class="slide">
@@ -331,20 +369,20 @@
     </div>
 
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   <br>
     <!--news start-->
-    <div class="news_holder">
+    <div class="news_holder" id="news">
       <h2 class="header">خبرنامه</h2>
       <input type="text" class="tinp" name="fname" placeholder="نام">
       <input type="text" class="tinp" name="lname" placeholder="نام خانوادگی">
@@ -375,7 +413,14 @@
     
     <!--footer end-->
 
-
+    <script src="../js/gallery.js"></script>
+    <script src="../js/comments.js"></script>
+    <script src="../js/activity.js"></script>
+    <script src="../js/news.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
 </body>
 
 </html>
